@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme (default) */
+body {
+  @apply bg-telegram-light text-gray-900 font-sans transition-colors duration-300;
+}
+
+html.dark body {
+  @apply bg-dark-bg text-dark-text;
+}
+
+/* Chat message styles */
+.message-bubble-own {
+  @apply bg-telegram-blue text-white rounded-message max-w-xs break-words shadow-md;
+}
+
+.message-bubble-other {
+  @apply bg-white text-gray-900 rounded-message max-w-xs break-words border border-gray-200 shadow-sm;
+}
+
+html.dark .message-bubble-other {
+  @apply bg-dark-card text-dark-text border-gray-700;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white text-gray-900 shadow-sm;
+}
+
+html.dark .card {
+  @apply bg-dark-card text-dark-text;
+}
+
+/* Input field */
+.input-field {
+  @apply border-gray-300 focus:border-telegram-blue;
+}
+
+html.dark .input-field {
+  @apply bg-dark-card text-dark-text border-gray-600 focus:border-telegram-blue;
+}
+
+/* ScrollBar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  @apply bg-gray-600;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Button transitions */
+button {
+  @apply transition-all duration-200;
+}
+
+/* Header */
+.header {
+  @apply bg-white border-b border-gray-200;
+}
+
+html.dark .header {
+  @apply bg-dark-card border-gray-700;
+}
+
+/* Sidebar */
+.sidebar {
+  @apply bg-white border-r border-gray-200;
+}
+
+html.dark .sidebar {
+  @apply bg-dark-card border-gray-700;
+}
