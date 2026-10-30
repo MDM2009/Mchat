@@ -1,4 +1,4 @@
-# Mchat - Telegram Clone
+# Mchat 
 
 Полнофункциональный клон Telegram с использованием React, Node.js, Socket.io и MongoDB.
 
